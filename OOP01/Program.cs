@@ -17,6 +17,26 @@
         }
     }
 
+
+    struct Point
+    {
+        public double X;
+        public double Y;
+        public Point(double x, double y)
+        {
+            X = x;
+            Y = y;
+        }
+
+        public double DistanceTo(Point p)
+        {
+            double deltaX = p.X - X;
+            double deltaY = p.Y - Y;
+            return Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
+        }
+
+
+    }
     enum WeekDays
     {
         Monday,
@@ -126,7 +146,48 @@
 
             #endregion
 
+            #region 5. Create an enum called "Colors" with the basic colors (Red, Green, Blue) as its members. Write a C# program that takes a color name as input from the user and displays a message indicating whether the input color is a primary color or not.
+            //Console.WriteLine("Enter a color name (Red, Green, Blue): ");
+            //string inputColor = Console.ReadLine();
+
+            //if (Enum.TryParse(inputColor, true, out Colors color))
+            //{
+            //    if (color == Colors.Red || color == Colors.Blue || color == Colors.Green )
+            //    {
+            //        Console.WriteLine($"'{inputColor}' is a primary color.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"'{inputColor}' is not a primary color.");
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"'{inputColor}' is not a valid color.");
+            //}
+            #endregion
+
+            #region 6- Create a struct called "Point" to represent a 2D point with properties "X" and "Y". Write a C# program that takes two points as input from the user and calculates the distance between them.
+            //Console.WriteLine("Enter the X coordinate for the first point1 (X Y):");
+            //double x1 = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter the Y coordinate for the first point1 (X Y):");
+            //double y1 = double.Parse(Console.ReadLine());
+            //Point point1 = new Point(x1, y1);
+
+            //Console.WriteLine("Enter the X coordinate for the first point2 (X Y):");
+            //double x2 = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter the Y coordinate for the first point2 (X Y):");
+            //double y2 = double.Parse(Console.ReadLine());
+            //Point point2 = new Point(x2, y2);
+
+            //double distance = point1.DistanceTo(point2);
+            //Console.WriteLine($"The distance between the two points is: {distance}");
+            #endregion
+
             
+
+
+
 
         }
     }
